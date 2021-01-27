@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container" id="input-container">
+            <h1 class="appointment"> Appointment schedule</h1>
+
+            <form class="form" id="countDownForm">
+                <label for=""> Request an appointment</label>
+                <input type="text" class="title" id="title">
+                <label for=""> Day / month / year</label>
+                <input type="date" class="date-picker" id="date-picker">
+                <button type="Submit"> Submit</button>
+            </form>
+
+        </div>
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span>Days</li>
+                <li><span></span>Hrs</li>
+                <li><span></span>Mins</li>
+                <li><span></span>Sec</li>
+            </ul>
+            <button id="countdown-button"> Cancel</button>
+        </div>
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">Reminder</h1>
+            <h1 class="complete-info" id="complete-info"> Appointment complete!</h1>
+            <button id="complete-button"> New appointment</button>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
